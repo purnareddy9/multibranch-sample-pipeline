@@ -18,6 +18,6 @@ jobs:
 
       - name: Run sample test
         run: |
-          echo "Running sample test workflow"
+          echo "Running sample test workflow1"
           echo "Repository root: $(pwd)"
           ls -la
