@@ -1,0 +1,23 @@
+name: Sample Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run sample test
+        run: |
+          echo "Running sample test workflow"
+          echo "Repository root: $(pwd)"
+          ls -la
