@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - develop
+      - yyy1277
   pull_request:
     branches:
       - main
